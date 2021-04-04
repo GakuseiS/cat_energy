@@ -1,0 +1,47 @@
+.how {
+    padding: 0 110px;
+
+    &__title {
+        font-size: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        height: 230px;
+        width: 245px;
+    }
+
+    &__icon {
+        display: block;
+        width: 80px;
+        height: 80px;
+
+        background-color: #68b738;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--one {
+            background-image: url('./advantage-1.png');
+        }
+
+        &--two {
+            background-image: url('./advantage-2.png');
+        }
+
+        &--three {
+            background-image: url('./advantage-3.png');
+        }
+
+        &--four {
+            background-image: url('./advantage-4.png');
+        }
+    }
+}
