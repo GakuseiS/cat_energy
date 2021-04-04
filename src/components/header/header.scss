@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 110px;
+    padding-bottom: 35px;
+
+    color: #fff;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 480px;
+        margin: 0;
+        padding: 0;
+        
+        list-style: none;
+    }
+
+    &__item {
+        padding-top: 15px;
+
+        text-transform: uppercase;
+        font-size: 20px;
+
+        &--active {
+            border-bottom: 2px solid #fff;
+        }
+    }
+}

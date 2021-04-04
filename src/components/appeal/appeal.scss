@@ -1,0 +1,42 @@
+.appeal {
+    display: flex;
+    padding: 0 110px;
+    height: 560px;
+
+    &__left {
+        padding-left: 80px;
+        width: 415px;
+    }
+
+    &__header {
+        margin-top: 85px;
+
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        position: relative;
+        left: -40px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+
+        width: 720px;
+        height: 700px;
+
+        background-image: url('./index-background-desktop.jpg');
+    }
+}

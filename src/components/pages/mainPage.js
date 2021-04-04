@@ -1,14 +1,11 @@
 import React from 'react';
-import Button from '../button/button';
+import Appeal from '../appeal/appeal';
+
 
 const MainPage = () => {
     return (
-        <React.Fragment>
-            <div>
-                <h1>Функциональное питание для котов</h1>
-                <p>Занялся собой? Займись котом!</p>
-                <Button>Подобрать программу</Button>
-            </div>
+        <div className='mainPage'>
+            <Appeal />
             <div>
                 <div>
                     <h2>Похудение</h2>
@@ -70,7 +67,7 @@ const MainPage = () => {
                     <span>Стало</span>
                 </div>
             </div>
-        </React.Fragment>
+        </div>
     )
 }
 
