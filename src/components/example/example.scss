@@ -1,4 +1,6 @@
 .example {
+    position: relative;
+    margin-top: 70px;
 
     &__title {
         padding-left: 110px;
@@ -21,7 +23,7 @@
     }
 
     &__right {
-        margin-top: 240px;
+        margin-top: 263px;
     }
 
     &__text {
@@ -30,6 +32,7 @@
 
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
+        line-height: 24px;
     }
 
     &__cost {
@@ -39,7 +42,7 @@
         text-transform: uppercase;
 
         &-exact {
-            margin-left: 50px;
+            margin-left: 65px;
         }
     }
 
@@ -55,6 +58,11 @@
         transform: rotate(180deg);
     }
 
+    &__fancy {
+        width: 160px;
+        box-sizing: border-box;
+    }
+
     &__fancy:first-of-type {
         margin-right: 40px;
     }
@@ -67,6 +75,13 @@
 
     &__wrapper {
         display: flex;
+    }
+
+    &__cat {
+        position: absolute;
+        top: -45px;
+        right: 70px;
+        // clip: rect(0, 340px, 499px, auto);
     }
 
     &__slider {

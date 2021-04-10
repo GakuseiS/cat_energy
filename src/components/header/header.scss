@@ -4,7 +4,6 @@
     padding: 50px 110px;
     padding-bottom: 35px;
 
-    color: #fff;
 
     &__list {
         display: flex;
@@ -24,6 +23,28 @@
 
         &--active {
             border-bottom: 2px solid #fff;
+
+            &--alt {
+                border-bottom: 2px solid #68b738;
+            }
+        }
+    }
+
+    &__link {
+        color: #fff;        
+        text-decoration: none;
+
+        &:visited {
+            color: #fff;
+        }
+
+        &--alt {
+            color: #000;
+            text-decoration: none;
+
+            &:visited {
+                color: #000;
+            }
         }
     }
 }

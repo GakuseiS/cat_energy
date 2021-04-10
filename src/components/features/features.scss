@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
+    margin-top: 75px;
 
     &__item {
         width: 570px;
@@ -19,6 +20,7 @@
 
         font-size: 36px;
         text-transform: uppercase;
+        font-weight: normal;
 
         &-icon {
             display: inline-block;
@@ -64,6 +66,7 @@
     &__text {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
+        line-height: 24px;
     }
 
     &__link {
