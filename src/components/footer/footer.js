@@ -15,11 +15,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer__bottom'>
-                <img src={fLogo} alt='logo'/>
-                <ul>
-                    <li>Vk</li>
-                    <li>Instagram</li>
-                    <li>facebook</li>
+                <img width='130' height='25px' src={fLogo} alt='logo'/>
+                <ul className='footer__social'>
+                    <li className='footer__list-item'><a className='footer__social-item footer__social-item--vk' href='vk.com'>vk</a></li>
+                    <li><a className='footer__social-item footer__social-item--insta' href='instagram.com'>inst</a></li>
+                    <li><a className='footer__social-item footer__social-item--fb' href='facebook.com'>fb</a></li>
                 </ul>
             </div>
         </div>
