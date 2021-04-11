@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import MainPage from '../pages/mainPage';
-import Catalog from '../pages/catalog';
+import CatalogPage from '../pages/catalogPage';
 import './App.scss';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Header />
         {/* <MainPage /> */}
         <Switch>
-          <Route path='/catalog' component={Catalog} />
+          <Route path='/catalog' component={CatalogPage} />
           <Route path='/' component={MainPage} />
         </Switch>
         <Footer />

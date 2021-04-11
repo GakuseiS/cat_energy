@@ -13,7 +13,6 @@ const Header = (props) => {
         'header__item--active': props.location.pathname === '/',
         'header__item--active--alt': props.location.pathname !== '/'
     });
-    console.log(active);
     return (
         <nav className='header'>
             <img src={logoDesctop} alt='logo'/>
