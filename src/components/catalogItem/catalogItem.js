@@ -11,9 +11,11 @@ const CatalogItem = ({title, img, size, taste, price}) => {
                 <li>Вкус {taste}</li>
                 <li>Цена {price} Р.</li>
             </ul>
-            <Button>Заказать</Button>
+            <Button size='small'>Заказать</Button>
         </div>
     )
 }
+
+
 
 export default CatalogItem;

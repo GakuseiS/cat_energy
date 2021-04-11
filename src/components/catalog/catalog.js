@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '../button/button';
-import plus from './plus.png';
 import item1 from './catalog-1-desktop.png';
 import item2 from './catalog-2-desktop.png';
 import item3 from './catalog-3-desktop.png';
@@ -9,6 +8,7 @@ import item5 from './catalog-5-desktop.png';
 import item6 from './catalog-6-desktop.png';
 import item7 from './catalog-7-desktop.png';
 import CatalogItem from '../catalogItem/catalogItem';
+import './catalog.scss';
 
 const Catalog = () => {
     const items = [
@@ -21,15 +21,14 @@ const Catalog = () => {
         {id: 7, title: 'Cat energy slim 500 г', img: item7, size: 500, taste: 'Рис', price: 500 }
     ];
     return (
-        <div>
+        <div className='catalog'>
             {items.map(item => {
                 return <CatalogItem key={item.id} title={item.title} img={item.img} size={item.size} taste={item.taste} price={item.price}/>
             })}
-            <div>
-                <img src={plus} alt='plus' />
-                <h3>Показать еще 100500 товаров</h3>
-                <p>На самом деле вкусов гораздо больше!</p>
-                <Button>Показать всё</Button>
+            <div className='catalog__more'>
+                <h3 className='catalog__more-title'>Показать еще 100500 товаров</h3>
+                <p className='catalog__more-text'>На самом деле вкусов гораздо больше!</p>
+                <Button size='small' color='gray'>Показать всё</Button>
             </div>
         </div>
     )
