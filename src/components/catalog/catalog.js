@@ -12,13 +12,13 @@ import './catalog.scss';
 
 const Catalog = () => {
     const items = [
-        {id: 1, title: 'Cat energy pro 500 г', img: item1, size: 500, taste: 'Курица', price: 700 },
-        {id: 2, title: 'Cat energy pro 1000 г', img: item2, size: 1000, taste: 'Курица', price: 1000 },
-        {id: 3, title: 'Cat energy pro 500 г', img: item3, size: 500, taste: 'Рыба', price: 700 },
-        {id: 4, title: 'Cat energy pro 1000 г', img: item4, size: 1000, taste: 'Рыба', price: 1000 },
-        {id: 5, title: 'Cat energy slim 500 г', img: item5, size: 500, taste: 'Гречка', price: 400 },
-        {id: 6, title: 'Cat energy slim 1000 г', img: item6, size: 1000, taste: 'Гречка', price: 700 },
-        {id: 7, title: 'Cat energy slim 500 г', img: item7, size: 500, taste: 'Рис', price: 500 }
+        {id: 1, title: 'Cat energy pro', img: item1, size: '500 г', taste: 'Курица', price: 700 },
+        {id: 2, title: 'Cat energy pro', img: item2, size: '1000 г', taste: 'Курица', price: 1000 },
+        {id: 3, title: 'Cat energy pro', img: item3, size: '500 г', taste: 'Рыба', price: 700 },
+        {id: 4, title: 'Cat energy pro', img: item4, size: '1000 г', taste: 'Рыба', price: 1000 },
+        {id: 5, title: 'Cat energy slim', img: item5, size: '500 г', taste: 'Гречка', price: 400 },
+        {id: 6, title: 'Cat energy slim', img: item6, size: '1000 г', taste: 'Гречка', price: 700 },
+        {id: 7, title: 'Cat energy slim', img: item7, size: '500 г', taste: 'Рис', price: 500 }
     ];
     return (
         <div className='catalog'>

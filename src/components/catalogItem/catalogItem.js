@@ -1,15 +1,16 @@
 import React from 'react';
 import Button from '../button/button';
+import './catalogItem.scss';
 
 const CatalogItem = ({title, img, size, taste, price}) => {
     return (
-        <div>
-            <img src={img} alt='pack' />
-            <h3>{title}</h3>
-            <ul>
-                <li>Объем {size} г</li>
-                <li>Вкус {taste}</li>
-                <li>Цена {price} Р.</li>
+        <div className='catalogItem'>
+            <img className='catalogItem__img' src={img} alt='pack' />
+            <h3 className='catalogItem__title'>{title}<br />{size}</h3>
+            <ul className='catalogItem__list'>
+                <li className='catalogItem__list-item'>Объем <span>{size}</span></li>
+                <li className='catalogItem__list-item'>Вкус <span>{taste}</span></li>
+                <li className='catalogItem__list-item'>Цена <span>{price} Р.</span></li>
             </ul>
             <Button size='small'>Заказать</Button>
         </div>
