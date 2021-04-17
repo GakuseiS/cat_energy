@@ -8,6 +8,7 @@ const Button = (props) => {
         'button': true,
         [`button-${props.size}`]: props.size,
         [`button-${props.color}`]: props.color,
+        [`button-${props.page}`]: props.page
     });
     return (
         <button className={classes}>{props.children}</button>
@@ -16,12 +17,14 @@ const Button = (props) => {
 
 Button.propTypes = {
     size: propTypes.string,
-    color: propTypes.string
+    color: propTypes.string,
+    page: propTypes.string
 }
 
 Button.defaultProps = {
     size: 'medium',
-    color: 'green'
+    color: 'green',
+    page: ''
 }
 
 export default Button;

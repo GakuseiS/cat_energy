@@ -12,7 +12,7 @@ const CatalogItem = ({title, img, size, taste, price}) => {
                 <li className='catalogItem__list-item'>Вкус <span>{taste}</span></li>
                 <li className='catalogItem__list-item'>Цена <span>{price} Р.</span></li>
             </ul>
-            <Button size='small'>Заказать</Button>
+            <Button size='small' page='catalog'>Заказать</Button>
         </div>
     )
 }
