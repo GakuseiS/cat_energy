@@ -5,15 +5,16 @@ import Header from '../header/header';
 import MainPage from '../pages/mainPage';
 import CatalogPage from '../pages/catalogPage';
 import './App.scss';
+import FormPage from '../pages/formPage';
 
 function App() {
   return (
     <div className='app'>
       <Router>
         <Header />
-        {/* <MainPage /> */}
         <Switch>
           <Route path='/catalog' component={CatalogPage} />
+          <Route path='/form' component={FormPage} />
           <Route path='/' component={MainPage} />
         </Switch>
         <Footer />
