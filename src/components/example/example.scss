@@ -93,10 +93,18 @@
     &__label {
         display: inline-block;
 
-        border-bottom: 1px solid #bebebe;
+        border-bottom: 1px dotted #bebebe;
 
         font-size: 20px;
         text-transform: uppercase;
+
+        &:hover {
+            border-bottom: 1px solid #989898;
+        }
+
+        &:active {
+            border-bottom: none;
+        }
         
     }
 }

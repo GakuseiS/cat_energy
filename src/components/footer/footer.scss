@@ -81,15 +81,39 @@
                 margin-right: 27px;
 
                 background-image: url('./vk.png');
+
+                &:hover {
+                    background-image: url('./vk-hover.png');
+                }
+
+                &:active {
+                    background-image: url('./vk-active.png');
+                }
             }
 
             &--insta {
                 background-image: url('./insta.png');
                 margin-right: 23px;
+
+                &:hover {
+                    background-image: url('./insta-hover.png');
+                }
+
+                &:active {
+                    background-image: url('./insta-active.png');
+                }
             }
 
             &--fb {
                 background-image: url('./fb.png');
+
+                &:hover {
+                    background-image: url('./fb-hover.png');
+                }
+
+                &:active {
+                    background-image: url('./fb-active.png');
+                }
             }
         }
     }

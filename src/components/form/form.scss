@@ -50,6 +50,18 @@
         text-transform: uppercase;
         font-family: inherit;
 
+        &:hover {
+            border: 1px solid #cfcfcf;
+        }
+
+        &:active {
+            border: 1px solid #4d4d4d;
+        }
+
+        &:invalid {
+            border: 1px solid #ff8282;
+        }
+
         &--name {
             width: 505px;
             margin-bottom: 15px;
@@ -99,6 +111,10 @@
             border: 1px solid #e6e6e6;
             border-radius: 50%;
             margin-right: 15px;
+
+            &:hover {
+                border: 1px solid #bcbcbc;
+            }
         }
 
         &-check {
@@ -110,6 +126,10 @@
             height: 40px;
             box-sizing: border-box;
             border: 1px solid #cdcdcd;
+            
+            &:hover {
+                border: 1px solid #bcbcbc;
+            }
         }
     }
 
@@ -189,6 +209,14 @@
         line-height: 30px;
 
         resize: none;
+
+        &:hover {
+            border: 1px solid #cfcfcf;
+        }
+
+        &:active {
+            border: 1px solid #4d4d4d;
+        }
     }
 
     &__input-check {
