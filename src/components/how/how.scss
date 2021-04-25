@@ -1,6 +1,11 @@
 .how {
     padding: 0 110px;
 
+    @media screen and (max-width: 768px) {
+        padding: 0 30px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
     &__text {
         margin-top: 40px;
 
@@ -21,6 +26,10 @@
         margin: 0;
 
         list-style: none;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -28,6 +37,10 @@
 
         height: 230px;
         width: 245px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 70px;
+        }
 
         &::after {
             position: absolute;

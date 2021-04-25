@@ -18,6 +18,7 @@ const Example = () => {
                                 <legend className='example__legend' align='center'> Затрачено времени </legend>
                                 <span className='example__numbers'>60 дней</span>
                             </fieldset>
+                            <p className='example__cost example__cost--table'>Затраты на питание: <span className='example__cost-exact'>15000 руб.</span></p>
                         </div>
                     <p className='example__cost'>Затраты на питание: <span className='example__cost-exact'>15000 руб.</span></p>
                 </div>

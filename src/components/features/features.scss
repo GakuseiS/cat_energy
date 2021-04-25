@@ -4,12 +4,33 @@
     padding: 0 110px;
     margin-top: 75px;
 
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+
+    &__wrapper {
+        @media screen and (max-width: 768px) {
+            width: 375px;
+        }
+    }
+
     &__item {
         width: 570px;
         padding: 40px 50px;
         box-sizing: border-box;
 
         background-color: #f2f2f2;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            &:first-of-type{
+                margin-bottom: 30px;
+            }
+        }
     }
 
     &__title {
@@ -22,6 +43,10 @@
         text-transform: uppercase;
         font-weight: normal;
 
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+
         &-icon {
             display: inline-block;
             height: 110px;
@@ -32,6 +57,24 @@
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 50%;
+
+            
+
+            @media screen and (max-width: 768px) {
+                display: none;
+
+                margin-right: 0;
+                width: 200px;
+                height: 200px;
+            }
+
+            &--table{
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: inline-block;
+                }
+            }
 
             &--slim::after {
                 position: relative;
@@ -44,6 +87,13 @@
 
                 background-image: url('./cat-slim.png');
                 background-repeat: no-repeat;
+
+                @media screen and (max-width: 768px) {
+                    width: 190px;
+                    height: 190px;
+
+                    background-image: url('./cat-slimTablet.png');
+                }
             }
 
             &--pro::after {
@@ -58,6 +108,16 @@
 
                 background-image: url('./cat-pro.png');
                 background-repeat: no-repeat;
+
+                @media screen and (max-width: 768px) {
+                    top: 40px;
+                    left: -50px;
+
+                    width: 275px;
+                    height: 130px;
+
+                    background-image: url('./cat-proTablet.png');
+                }
             }
 
         }
@@ -67,6 +127,10 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         line-height: 24px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__link {

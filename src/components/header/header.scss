@@ -4,6 +4,9 @@
     padding: 50px 110px;
     padding-bottom: 35px;
 
+    @media screen and (max-width: 768px) {
+        padding: 25px 30px;
+    }
 
     &__list {
         display: flex;
@@ -13,6 +16,10 @@
         padding: 0;
         
         list-style: none;
+
+        @media screen and (max-width: 768px) {
+            width: 440px;
+        }
     }
 
     &__item {
@@ -24,9 +31,17 @@
         &--active {
             border-bottom: 2px solid #fff;
 
+            @media screen and (max-width: 768px) {
+                border-bottom: 2px solid #68b738;
+            }
+
             &--alt {
                 border-bottom: 2px solid #68b738;
             }
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
         }
     }
 
@@ -34,15 +49,28 @@
         color: #fff;        
         text-decoration: none;
 
+        @media screen and (max-width: 768px) {
+            color: #000;
+        }
+
         &:visited {
             color: #fff;
+            @media screen and (max-width: 768px) {
+                color: #000;
+            }
         }
         &:hover {
             color: rgba(255, 255, 255, 0.6);
+            @media screen and (max-width: 768px) {
+                color: rgba(0, 0, 0, 0.6);
+            }
         }
 
         &:active {
             color: rgba(255, 255, 255, 0.3);
+            @media screen and (max-width: 768px) {
+                color: rgba(0, 0, 0, 0.3);
+            }
         }
 
         &--alt {
