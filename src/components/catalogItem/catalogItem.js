@@ -5,7 +5,7 @@ import './catalogItem.scss';
 const CatalogItem = ({title, img, size, taste, price}) => {
     return (
         <div className='catalogItem'>
-            <img className='catalogItem__img' src={img} alt='pack' />
+            <img className='catalogItem__img' src={img} alt='pack'/>
             <h3 className='catalogItem__title'>{title}<br />{size}</h3>
             <ul className='catalogItem__list'>
                 <li className='catalogItem__list-item'>Объем <span>{size}</span></li>

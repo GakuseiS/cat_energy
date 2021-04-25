@@ -29,6 +29,7 @@
         @media screen and (max-width: 768px) {
             flex-wrap: wrap;
             padding: 50px 0;
+            padding-bottom: 0;
 
             background-color: #fff;
         }
@@ -88,8 +89,6 @@
             }
         }
 
-        
-
         &-exact {
             margin-left: 65px;
         }
@@ -125,9 +124,6 @@
     &__wrapper {
         display: flex;
 
-        // @media screen and (max-width: 768px) {
-        //     align-items: flex-start;
-        // }
     }
 
     &__cat {

@@ -26,7 +26,7 @@ const Catalog = () => {
                 return <CatalogItem key={item.id} title={item.title} img={item.img} size={item.size} taste={item.taste} price={item.price}/>
             })}
             <div className='catalog__more'>
-                <h3 className='catalog__more-title'>Показать еще 100500 товаров</h3>
+                <h3 className='catalog__more-title'>Показать еще<br /> 100500 товаров</h3>
                 <p className='catalog__more-text'>На самом деле вкусов гораздо больше!</p>
                 <Button size='small' color='gray'>Показать всё</Button>
             </div>

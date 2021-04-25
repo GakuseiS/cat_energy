@@ -9,9 +9,19 @@
 
     background-color: #f2f2f2;
 
+    @media screen and (max-width: 768px) {
+        width: 325px;
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
     &__img {
         position: absolute;
         bottom: 300px;
+        @media screen and (max-width: 768px) {
+            left: 75px;
+            
+        }
     }
 
     &__title {

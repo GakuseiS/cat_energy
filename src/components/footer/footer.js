@@ -1,12 +1,17 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
+import classNames from 'classnames';
 import fLogo from './footer-logo.png';
 import './footer.scss';
 
-const Footer = () => {
+const Footer = (props) => {
+    const footerClass = classNames({
+        'footer__alt': props.location.pathname !== '/'
+    });
     return (
         <div className='footer'>
-            <div className = 'footer__top'>
-                <div className='footer__modal'>
+            <div className = {`footer__top`}>
+                <div className={`footer__modal ${footerClass}`}>
                     <h2 className='footer__modal-title'>Приглашаем <br /> к сотрудничеству дилеров!</h2>
                     <p className = 'footer__modal-address'>ул. Большая<br /> Конюшенная, д. 19/8
                         <span className='footer__modal-city'>Санкт-Петербург</span>
@@ -27,4 +32,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default withRouter(Footer);
