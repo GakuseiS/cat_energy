@@ -1,6 +1,10 @@
 .formPage {
     padding: 0 110px;
 
+    @media screen and (max-width: 768px) {
+        padding: 0 30px;
+    }
+
     &__title {
         margin-bottom: 50px;
 
