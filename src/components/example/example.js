@@ -29,9 +29,9 @@ const Example = () => {
                 <div className='example__right'>
                     <img className='example__catWas' src={catWas} width={`${588 * slider/100}`} height='499' alt='was' />
                     <img className='example__catBecame' src={catBecame} width={445} height='420' alt='became' />
-                    <span className='example__label' onClick={() => setSlider(slider = 0)}>Было</span>
-                    <input className='example__slider' type='range' min='0' max='100' step='1' value={slider} onChange={(evt) => setSlider(slider = evt.target.value)}/>
-                    <span className='example__label' onClick={() => setSlider(slider = 100)}>Стало</span>
+                    <span className='example__label' onClick={() => setSlider(0)}>Было</span>
+                    <input className='example__slider' type='range' min='0' max='100' step='1' value={slider} onChange={(evt) => setSlider(evt.target.value)}/>
+                    <span className='example__label' onClick={() => setSlider(100)}>Стало</span>
                 </div>
             </div>
         </div>
