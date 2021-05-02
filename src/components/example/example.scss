@@ -126,15 +126,30 @@
 
     }
 
-    &__cat {
+    &__catWas {
         position: absolute;
-        top: -45px;
-        right: 70px;
+        top: -60px;
+        left: 700px;
         // clip: rect(0, 340px, 499px, auto);
+        object-fit: cover;
+        object-position: left top;
+        z-index: 5;
         @media screen and (max-width: 768px) {
             top: 450px;
-            right: 55px;
+            left: 30px;
         }
+    }
+
+    &__catBecame {
+        position: absolute;
+        right: 150px;
+        top: -0px;
+        
+        @media screen and (max-width: 768px) {
+            top: 505px;
+            left: 180px;
+        }
+        
     }
 
     &__slider {
