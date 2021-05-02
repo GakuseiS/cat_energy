@@ -4,7 +4,7 @@ import catWas from './Was.png';
 import catBecame from './cat2.png';
 
 const Example = () => {
-    let [slider, setSlider] = useState(50);
+    let [slider, setSlider] = useState(60);
 
     return (
         <div className='example'>
